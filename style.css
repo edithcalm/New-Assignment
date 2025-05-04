@@ -738,34 +738,47 @@ nav select#pages-select option {
   }
   /* Default Light Theme */
 body.light-theme {
-  background-color: light var(--text-color);
+  background-color: #fff;
   color: #000;
 }
 
 body.light-theme .btn {
-  background-color: light var(--primary-color);
-  color: light var(--text-color);
+  background-color: var(--dark-color);
+  color: var(--primary-color);
 }
 
-body.light-theme .hero-content h1,
-body.light-theme .hero-content p,
+body.light-theme .hero-content h1,h2,h3,h4,h5,h6 {
+  color: var(--dark-color);
+}
+body.light-theme .hero-content p {
+  color: var(--dark-color);
+}
+
 body.light-theme .logo {
-  color: light var(--text-color);
+  color: #000;
 }
 
 /* Dark Theme */
 body.dark-theme {
   background-color: #121212;
-  color: var(--primary-color);
+  color: #fff;
 }
 
 body.dark-theme .btn {
-  background-color: var(--dark-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color:dark var(--dark-color);
 }
 
-body.dark-theme .hero-content h1,
-body.dark-theme .hero-content p,
-body.dark-theme .logo {
+body.dark-theme .hero-content h1,h2,h3,h4,h5,h6 {
   color: var(--primary-color);
+}
+body.dark-theme .hero-content p
+{
+  color: var(--text-color);
+}
+body.dark-theme .logo {
+  color: var(--text-color);
+}
+body.dark-theme .menu li a {
+  color: var(--text-color);
 }

@@ -59,6 +59,8 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+
 // Theme toggle logic
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
