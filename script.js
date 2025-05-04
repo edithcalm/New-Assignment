@@ -59,3 +59,20 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+// Theme toggle logic
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme') || 'dark-theme';
+body.classList.add(savedTheme);
+
+toggleButton.addEventListener('click', () => {
+  if (body.classList.contains('dark-theme')) {
+    body.classList.replace('dark-theme', 'light-theme');
+    localStorage.setItem('theme', 'light-theme');
+  } else {
+    body.classList.replace('light-theme', 'dark-theme');
+    localStorage.setItem('theme', 'dark-theme');
+  }
+});
